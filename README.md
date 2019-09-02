@@ -99,8 +99,6 @@ Here's a [link to my video result](./project_video.mp4)
 
 ### Discussion
 
-#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 During step 2, I coverted the picture into HLS channel and used L and S channel. `S channel` is very effective in detecting yellow lines, which `L channel` helps to detect white line. However, `S channel` also includes the shadow of the ground. To slove this problem, I have used `L channel` with threshold 0 to 50 to filter out the dark bit.
